@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
               controller: numHoursController,
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15.0),
               child: FloatingActionButton(
                 child: Icon(Icons.alarm),
                 onPressed: () {
@@ -88,6 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
                 backgroundColor: Theme.of(context).primaryColorDark,
+                highlightElevation: 3.0,
               ),
             ),
             if (finalMessage.length > 0)
